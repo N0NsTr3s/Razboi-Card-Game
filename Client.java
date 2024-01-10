@@ -240,13 +240,12 @@ class GUI extends JFrame {
                 System.out.println("Flip button pressed"); // Debugging line
                 flipCardPressed = true;
                 
-                if (response.contains("Diamonds") || response.contains("Hearts") || response.contains("Clubs") || response.contains("Spades")) {
-                   
-                
+                if ((response.contains("Diamonds") || response.contains("Hearts") || response.contains("Clubs") || response.contains("Spades"))) {
                     String[] cards = response.split(",");
                     setPlayer1Card(cards[0]);
-                    setPlayer2Card(cards[1]);}
-                    
+                    setPlayer2Card(cards[1]);
+                }
+                
             }
         });
         gbc.gridy = 0;
